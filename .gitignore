@@ -1,0 +1,33 @@
+# Build folders
+bin/
+obj/
+
+# .NET specific
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Backup files
+*.bak
+*.old
+
+
+# JetBrains Rider specific
+.idea/
+*.iml
+
+# Publish output
+publish/
+dist/
+
+# Environment files
+.env
+.env.*
+
