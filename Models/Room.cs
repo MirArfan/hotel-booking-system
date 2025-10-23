@@ -11,14 +11,18 @@ namespace HotelBookingSystem.Models
         {
             RoomNumber=roomNumber;
             Type=type;
-            Price=Price;
+            Price=price;
             IsBooked=false;
         }
 
         public void DisplayInfo()
         {
-            string status=IsBooked? "Booked": "Available";
+            string status = IsBooked ? "Booked" : "Available";
             Console.WriteLine($"Room : {RoomNumber} | Type : {Type} | Price: {Price} | Status: {status}");
+        }
+        public override string ToString()
+        {
+            return $"Room {RoomNumber} | {Type} | {Price} BDT/night | {(IsBooked ? " Booked" : " Available")}";
         }
     }
 }

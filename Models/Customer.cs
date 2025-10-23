@@ -19,5 +19,9 @@ namespace HotelBookingSystem.Models
         {
             Console.WriteLine($"Customer ID: {CustomerId} | Name: {Name} | Phone: {Phone} | Email: {Email}");
         }
+        public override string ToString()
+        {
+            return $"Customer #{CustomerId} | {Name}";
+        }
     }
 }

@@ -22,5 +22,10 @@ namespace HotelBookingSystem.Models
             Console.WriteLine($"Booking ID: {BookingId} | Room: {Room.RoomNumber} | Customer: {Customer.Name} | " +
                               $"Check-In: {CheckInDate.ToShortDateString()} | Check-Out: {CheckOutDate.ToShortDateString()}");
         }
+        public override string ToString()
+        {
+            return $"Booking #{BookingId} | {Customer.Name} | Room {Room.RoomNumber} | " +
+                   $"{CheckInDate:yyyy-MM-dd} | {CheckOutDate:yyyy-MM-dd}";
+        }
     }
 }
